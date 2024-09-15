@@ -78,3 +78,15 @@
     font-size: 20px;
   }
 }
+
+/* blog section  */
+p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+.blog-ul a{
+    color: #000000;
+}
+.blog-ul li{
+    margin-top: 4px;
+}
