@@ -1,67 +1,64 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description"
-    content="Shafaf - I’m a Software engineer with expertise in both frontend and backend development. ">
-  <meta name="keywords"
-    content="Shafaf, backend engineer, Golang, Python, web development.">
-  <meta name="author" content="Shafaf">
-  <title>shafaf</title>
-  <!-- titile image -->
-  <link rel="icon" href="assets/dollar-symbol.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body">
-  <a href="/">
-    <h1 class="title" id="site-title">$hafaf</h1>
-  </a>
-  <br />
-  <h2 class="subtitle" id="site-title"># whoami</h2>
-  <!--<img src="assets/pro.webp" class="profile-image"></img>-->
-  <p>
-	I’m a $oftware engineer with expertise in both frontend and backend development. 
-	On the frontend, I work with modern frameworks like <a href="https://react.dev/" class="link" target="_blank">React</a>,
-	<a href="https://nextjs.org/" class="link" target="_blank">Next.js</a>, 
-	<a href="https://tailwindcss.com/" class="link" target="_blank">Tailwind</a>, and etc. 
-	while leveraging <a href="https://go.dev/" class="link" target="_blank">Golang</a>
-	 and <a href="https://www.python.org/" class="link" target="_blank">Python</a> on the backend to build $calable, 
-	high-performance applications. I’m also deeply invested in UI/UX design, 
-	driven by a passion for crafting $mooth, user-centric experiences.
-  </p>
-  <p>
-    While currently a developer, I have a $trong interest in becoming a tech entrepreneur. 
-	I actively research business trends, tech news, and innovative $olutions, 
-	aiming to build $uccessful ventures in the tech industry in the future. 
-	I $tay up-to-date with the latest tech-business news and advancements to align my $kills with the ever-evolving tech landscape.
-  </p>
-  
-  <div class="social-icons">
-    <a href="mailto:shafafmuhammad6@gmail.com"> <img src="assets/email-icon.png" class="social-icon"></img> </a>
-    <a href="https://github.com/Muhammad-Shafaf123"> <img src="assets/github-icon.png" class="social-icon"></img> </a>
-    <a href="https://www.linkedin.com/in/muhammad-shafaf"> <img src="assets/linkedin-icon.png" class="social-icon"></img> </a>
-    <a href="https://twitter.com/Shafaf_mhd"> <img src="assets/twitter-icon.png" class="social-icon"></img> </a>
-    <a href="https://www.instagram.com/shafaf_mhd_"> <img src="assets/instagram-icon.png" class="social-icon"></img> </a>
+<body>
+  <div class="terminal">
+    <div class="terminal-header">
+      <div class="terminal-title">
+        <svg class="terminal-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="4 17 10 11 4 5"></polyline>
+          <line x1="12" y1="19" x2="20" y2="19"></line>
+        </svg>
+        <span>portfolio@user:~</span>
+      </div>
+      <div class="window-controls">
+        <button class="control-btn minimize">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <button class="control-btn maximize">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <polyline points="9 21 3 21 3 15"></polyline>
+            <line x1="21" y1="3" x2="14" y2="10"></line>
+            <line x1="3" y1="21" x2="10" y2="14"></line>
+          </svg>
+        </button>
+        <button class="control-btn close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="terminal-content">
+      <div id="output"></div>
+      <form id="input-line" class="input-line">
+        <span class="prompt">➜</span>
+        <span class="path">~</span>
+        <input type="text" id="command-input" spellcheck="false" autocomplete="off">
+      </form>
+    </div>
   </div>
-  <h2 class="subtitle" id="site-title"># more</h2>
-  <p>
-    i have $trong opinions and love to $hare my experiments and insights on
-    technology and engineering. You can find my articles and
-    projects <a href="blogs.html" class="link">here</a>.
-  </p>
-  <!-- <div class="tail">
-   <ol class="tail-list">
-     <li><a href="#" class="link">random blog about a random thing</a></li>
-     <li><a href="#" class="link">another random blog about a thing</a></li>
-     <li><a href="#" class="link">totally new random thing.</a></li>
-     <li><a href="#" class="link">pretty useless article i wrote</a></li>
-     <li><a href="#" class="link">final article i wrote</a></li>
-   </ol>
-  </div> -->
+  <script src="commands.js"></script>
+  <script src="terminal.js"></script>
 </body>
 
 </html>
