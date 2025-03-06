@@ -1,64 +1,137 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terminal Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <meta name="description"
+    content="Professional software developer portfolio showcasing 3 years of experience in full-stack development, projects, and skills.">
+  <title>Muhammad Shafaf</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
 
 <body>
-  <div class="terminal">
-    <div class="terminal-header">
-      <div class="terminal-title">
-        <svg class="terminal-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="4 17 10 11 4 5"></polyline>
-          <line x1="12" y1="19" x2="20" y2="19"></line>
-        </svg>
-        <span>portfolio@user:~</span>
+  <div class="container">
+    <!-- Profile Header -->
+    <header class="profile-header">
+      <div class="profile-image">
+        <img src="images/fsociety.jpg" alt="Profile">
       </div>
-      <div class="window-controls">
-        <button class="control-btn minimize">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-        </button>
-        <button class="control-btn maximize">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <polyline points="9 21 3 21 3 15"></polyline>
-            <line x1="21" y1="3" x2="14" y2="10"></line>
-            <line x1="3" y1="21" x2="10" y2="14"></line>
-          </svg>
-        </button>
-        <button class="control-btn close">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
+      <div class="profile-info">
+        <h1>Muhammad Shafaf</h1>
+        <p class="title">Full Stack Developer</p>
+        <p class="bio">Transforming ideas into high-performance applications with innovative full-stack development
+          solutions.</p>
+        <div class="social-links">
+          <a href="mailto:shafafmuhammad6@gmail.com" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            shafafmuhammad6@gmail.com
+          </a>
+          <a href="https://github.com/Shafaf-Dev" target="_blank" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-shafaf/" target="_blank" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="terminal-content">
-      <div id="output"></div>
-      <form id="input-line" class="input-line">
-        <span class="prompt">➜</span>
-        <span class="path">~</span>
-        <input type="text" id="command-input" spellcheck="false" autocomplete="off">
+    </header>
+
+    <!-- About -->
+    <section class="card">
+      <h2>About</h2>
+      <p>Passionate software developer with expertise in modern web technologies.
+        Focused on creating efficient, scalable solutions and maintaining high-quality codebases.
+        Strong advocate for clean code and best practices.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="skills-container" id="skills-container"></div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-grid" id="projects-container"></section>
+
+    <!-- Experience -->
+    <section class="card">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <div class="experience-item">
+          <div class="experience-icon">💻</div>
+          <div class="experience-content">
+            <h3>Software Developer</h3>
+            <p> <a class="company" href="https://www.zennode.com/" target="_blank">Zennode Technologies</a>.</p>
+            <p class="period">OCTOBER 2022 - PRESENT</p>
+            <p class="description">Lead developer for enterprise web applications, managing a team of 4 developers.</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon">💻</div>
+          <div class="experience-content">
+            <h3>WordPress Developer</h3>
+            <p><a class="company" href="https://www.zennode.com" target="_blank"> Zennode Technologies </a></p>
+            <p class="period">JANUARY 2022 - OCTOBER 2022</p>
+            <p class="description">Worked as a WordPress core developer. Implementing
+              advanced features like WP-CLI and Rest API integration.</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-icon">🏢</div>
+          <div class="experience-content">
+            <h3>Intern</h3>
+            <p><a class="company" href="https://www.ndimensionz.com/" target="_blank"> NDimensionZ Solutions Pvt Ltd
+              </a></p>
+            <p class="period">FEBRUARY 2021 - JULY 2021</p>
+            <p class="description">Worked in the Python back-end development team. The team
+              worked on an AI based interviewing application..</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <form class="contact-form" action="https://formcarry.com/s/61uVf2Slki5" method="POST"
+        enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" name="message" placeholder="Your message..." id="fc-generated-1-message"
+            required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
       </form>
-    </div>
+
+
+    </section>
   </div>
-  <script src="commands.js"></script>
-  <script src="terminal.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
