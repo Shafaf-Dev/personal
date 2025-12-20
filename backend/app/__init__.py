@@ -1,2 +1,0 @@
-# Blogging API Application Package
-
