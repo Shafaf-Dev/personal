@@ -4,7 +4,6 @@
  * ==========================================
  */
 const API_BASE_URL = "http://localhost:8000/api/v1";
-const GEMINI_API_KEY = ""; // System provides key at runtime
 
 export const api = {
   // Fetch Projects
@@ -60,23 +59,44 @@ export const api = {
       return [
         {
           id: 1,
-          title: "My First Blog Post",
+          title: "Understanding the Decorator Pattern in Python",
           date: "2025-01-01", // format: "Jan 2025"
-          readTime: "5 min read",
-          likes: 100,
-          excerpt: "This is the excerpt of my blog post.",
+          readTime: "3 min read",
+          likes: 8,
+          excerpt: "In software design, patterns offer standard solutions to common problems. They help developers create easier code to...",
           content: "This is the content of my blog post.",
-          tags: ["Python", "FastAPI", "PostgreSQL"],
+          tags: ["Python", "Design Patterns", "Decorator Pattern", "Python Programming"],//
+          url: "https://medium.com/@shafafmuhammad6/understanding-the-decorator-pattern-in-python-a7c4ebde04bd",
         },
         {
           id: 2,
-          title: "My Second Blog Post",
-          date: "2025-01-05", // format: "Jan 2025"
+          title: "Why AI Should Be a Core Part of Every Developer’s Workflow.",
+          date: "2024-09-05", // format: "Jan 2025"
           readTime: "4 min read",
-          likes: "200",
+          likes: "31",
           excerpt: "This is the excerpt of my second blog post.",
           content: "This is the content of my second blog post.",
-          tags: ["Python", "FastAPI", "PostgreSQL"],
+          tags: [
+            "AI",
+            "Machine Learning",
+            "Python",
+            "Python Programming",
+            "AI Programming",
+            "AI Development",
+            "AI Implementation",
+          ],
+          url: "https://medium.com/@shafafmuhammad6/why-ai-should-be-a-core-part-of-every-developers-workflow-a79897fe2803",
+        },
+        {
+          id: 3,
+          title: "NPM, YARN, BABEL and Webpack",
+          date: "2023-05-05", // format: "Jan 2025"
+          readTime: "2 min read",
+          likes: "8",
+          excerpt: "NPM, YARN, BABEL and Webpack are the most popular package managers and build tools for JavaScript. In this blog post, we'll explore the differences between them and how to use them.",
+          content: "This is the content of my third blog post.",
+          tags: ["JavaScript", "NPM", "YARN", "BABEL", "Webpack", "JavaScript Programming"],
+          url: "https://medium.com/@shafafmuhammad6/npm-yarn-babel-and-webpack-65b885f565d3",
         },
       ];
     }

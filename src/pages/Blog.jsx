@@ -56,7 +56,7 @@ const Blog = () => {
             <div className="prose prose-invert prose-lg text-gray-300 leading-relaxed">
               <p className="mb-6">{selectedBlog?.excerpt}</p>
               <div className="p-4 bg-white/5 border-l-4 border-teal-500 rounded-r-lg mb-6 italic text-gray-400">
-                "Note: This content is simulated as per the 'Single File' requirement."
+                "Note: Sorry, this content is not available. read it on <a href={selectedBlog?.url} className="text-teal-500 hover:text-teal-400 cursor-pointer" target="_blank" rel="noopener noreferrer">Medium!</a>"
               </div>
             </div>
           </article>
