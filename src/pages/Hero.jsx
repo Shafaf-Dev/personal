@@ -16,7 +16,7 @@ const Hero = ({ setPage }) => {
       <div className="relative mb-8 group reveal reveal-delay-1">
           <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-purple-600 rounded-full blur opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
           <div className="relative w-32 h-32 rounded-full p-[2px] bg-gradient-to-r from-gray-700 to-gray-800 overflow-hidden shadow-2xl">
-              <img src="./assets/profile-1 (1).jpg" 
+              <img src="./assets/profile-1.png" 
                     alt="Developer Profile" 
                     className="w-full h-full object-cover rounded-full border-2 border-[#030712] grayscale group-hover:grayscale-0 transition-all duration-500"/>
           </div>
